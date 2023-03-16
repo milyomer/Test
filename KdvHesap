@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class KdvHesap{
+	public static void main(String[] args) {
+		Scanner io = new Scanner(System.in);
+		System.out.println("Lütfen ürünün fiyatını giriniz:");
+		float fiyat = io.nextFloat();
+		float kdv = (0.18f * fiyat);
+		float topTutar = fiyat + kdv;
+		
+		System.out.println();	
+		System.out.println("Ürününüzün kdv dahil fiyatı: \n" +  topTutar + " TL");
+		System.out.println("Kdv tutarınız : \n" + kdv + " TL");
+		
+				
+	}
+}
