@@ -14,7 +14,6 @@ public class KdvHesap {
 			System.out.println("Kdv tutarınız : \n" + kdv + " TL");	
 			System.out.println();
 			System.out.println("Ürününüzün kdv dahil fiyatı: \n" +  topTutar + " TL");
-			
 					
 		}
 	}
