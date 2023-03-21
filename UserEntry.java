@@ -4,9 +4,9 @@ public class UserEntry {
 		Scanner io = new Scanner(System.in);
 		
 		System.out.println("Lütfen kullanıcı adınızı giriniz: ");
-		String userName = io.next();
+		String userName = io.nextLine();
 		System.out.println("Lütfen şifrenizi giriniz: ");
-		String password = io.next();
+		String password = io.nextLine();
 		String answer;
 		
 		if(
@@ -19,6 +19,7 @@ public class UserEntry {
 		 		else {
 			System.out.println("Şifreniz hatalıdır. Yeni şifre oluşturmak isterseniz lütfen \"evet\" olarak belirtin.");
 				answer = io.next();
+				if(answer.equals("evet") || answer.equals("Evet")) {
 			System.out.println("Lütfen yeni şifrenizi giriniz: ");
 			password = io.next();
 				if (password.equals("java123")) {
@@ -30,6 +31,7 @@ public class UserEntry {
 					} else {
 						System.out.println("Yeni şifreniz oluşturuldu");
 					}
+				}
 				}
 		}
 	}
