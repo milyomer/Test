@@ -33,6 +33,7 @@ public class Atm {
             	}break;
             	case 3: {
             		System.out.println("Güncel bakiyeniz: "+ totalValue+" TL\n");
+                    break;
             	}
             	}
             }while(action!=4);
